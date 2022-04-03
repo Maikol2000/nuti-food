@@ -1,0 +1,35 @@
+@use "variable";
+
+
+.page-error {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .main-content {
+        width: 70%;
+        max-width: 750px;
+        .title-404{
+            font-size: xx-large;
+            font-weight: bold;
+            color: #e83b4a;
+            margin-bottom: 2px;
+        }
+        .page-not-found{
+            font-size: x-large;
+            font-weight: normal;
+            color: black;
+            margin-bottom: 3px;
+        }
+        .home-button{
+            background-color: #e83b4a;
+            border: 1px solid #e83b4a;
+            margin-top: 3rem;
+            a{
+                color: white;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../styles/variable";
+@import "../styles/mixin";
+
+.button-icon__box {
+    width: 3.2rem;
+    height: 3.2rem;
+    background-image: url("../../shared/assets/images/button-icon-1.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    svg {
+        @include center-absolute();
+        color: #EAE9E9;
+        border: none;
+        width: 60%;
+        height: auto;
+    }
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

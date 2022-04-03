@@ -1,0 +1,59 @@
+@use "variable";
+
+.ant-btn {
+  border: 8px solid transparent;
+  border-image-source: url("../../shared/assets/images/bg-cancel.png");
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-image-slice: 8 9 10 10 fill;
+  color: $color__secondary;
+  min-width: 15rem;
+  min-height: 4rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    border-image-source: url(../../shared/assets/images/bg-primary.png);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-image-slice: 8 9 10 10 fill;
+    color: $color__primary;
+  }
+
+  &:focus {
+    background-color: transparent;
+
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border-image-slice: 8 9 10 10 fill;
+    color: $color__secondary;
+  }
+}
+
+.ant-btn.ant-btn-primary {
+  transition: All 0.3s;
+  border-image-source: url("../../shared/assets/images/bg-primary.png");
+  border-image-slice: 8 9 10 10 fill;
+  color: $color__primary;
+  background-color: transparent;
+
+  &:hover {
+    border: 8px solid transparent;
+    border-image-source: url("../../shared/assets/images/bg-cancel.png");
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-image-slice: 8 9 10 10 fill;
+    color: $color__secondary;
+  }
+
+  &:focus {
+    background-color: transparent;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-image-slice: 8 9 10 10 fill;
+  }
+}

@@ -1,0 +1,54 @@
+@use "variable";
+$border-radius: 1.6rem;
+
+.main-modal {
+  .ant-modal-confirm-body
+    > .anticon
+    + .ant-modal-confirm-title
+    + .ant-modal-confirm-content {
+    margin-left: 0px;
+  }
+  .ant-modal-confirm-body {
+    background-image: url("../../shared/assets//images/bg-modal.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4rem 4rem;
+  }
+  .anticon {
+    display: none !important;
+  }
+  .ant-modal-confirm-title {
+    border: 8px solid transparent;
+    border-image-source: url("../../shared/assets//images/bg-title-modal.png");
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border-image-slice: 8 9 10 10 fill;
+    color: $color__secondary;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .ant-modal-content {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .ant-modal-confirm-content {
+    color: $color__main;
+    text-align: center;
+  }
+  .nuti-label {
+    color: yellow;
+  }
+  .ant-modal-confirm-btns {
+    margin-top: 0px !important;
+    display: flex;
+    justify-content: center;
+    float: none;
+  }
+  .ant-modal-body {
+    padding: 0rem;
+  }
+}

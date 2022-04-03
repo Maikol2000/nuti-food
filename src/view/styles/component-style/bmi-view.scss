@@ -1,0 +1,148 @@
+@import "../variable";
+@import "../mixin";
+
+.modal {
+  background: #00000080;
+  &.active {
+    display: block;
+  }
+}
+
+.main-card {
+  position: absolute;
+  background: initial;
+  margin: initial;
+  width: 80%;
+  max-width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 49rem;
+  border-image-source: url(../../../shared/assets/images/bg-bmi.png);
+  border-image-slice: 4.1% 4.5% 5% 5.5% fill;
+  @include respond(xs-screen) {
+    padding: 1.8rem;
+    width: 80%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.main-form {
+  .header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+}
+
+.circle {
+  position: relative;
+  margin-top: 2.1rem;
+  height: 8.6rem;
+  &-img {
+    @include center-absolute;
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  &-text {
+    @include center-absolute;
+    @include style-text(bold, 2rem, 2.4rem, #fff);
+    font-family: San Francisco Display;
+    font-style: normal;
+  }
+}
+
+.bmi {
+  position: relative;
+  border-style: solid;
+  border-width: 16px;
+  border-image: url(../../../shared/assets/images/bg-bmi.png) 24 32 16 16 fill;
+  margin-top: 0.8rem;
+  &-content {
+    width: 100%;
+    .bmi-title {
+      @include style-text(bold, 1.4rem, 1.9rem, #fff);
+      font-family: Nunito;
+      font-style: normal;
+    }
+    .text {
+      @include style-text(normal, 1.2rem, 1.4rem, #fff);
+      font-family: Nunito;
+      font-style: normal;
+    }
+  }
+}
+
+.advise {
+  margin-top: 0.8rem;
+  text-align: center;
+  .text {
+    @include style-text(normal, 1.4rem, 1.8rem, #fff);
+    font-family: Nunito;
+    font-style: normal;
+  }
+}
+
+.ant-table {
+  background: transparent;
+  &-thead {
+    tr {
+      th {
+        @include style-text(bold, 1rem, 1.4rem, #fff);
+        font-family: Nunito;
+        font-style: normal;
+        text-align: center;
+        background: transparent;
+        padding: 0.8rem 1.2rem;
+      }
+    }
+  }
+  &-tbody {
+    tr {
+      td {
+        @include style-text(normal, 1rem, 1.4rem, #fff);
+        font-family: Nunito;
+        font-style: normal;
+        padding: 0.3rem;
+        &:not(:first-child) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.disabled-row {
+  pointer-events: none;
+}
+
+.secondary-title {
+  width: initial;
+  height: initial;
+  padding: 0.5rem 2.3rem;
+}
+
+.ant-btn-primary {
+  @include style-text(normal, 1.2rem, 1.4rem, #fff);
+  font-family: Nunito;
+  font-style: normal;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-repeat: no-repeat;
+  background-image: url(../../../shared/assets/images/button-close.png);
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  outline: none;
+  background-color: transparent;
+}

@@ -1,0 +1,38 @@
+@import "../../styles/variable";
+@import "../../styles/mixin";
+
+
+.register-page {
+    // min-height: 100%;
+   
+    .register-input {
+        .pepsi-title {
+            margin-bottom: 13%;
+        }
+
+        label.ant-checkbox-wrapper {
+            text-align: left;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        label.ant-checkbox-wrapper span {
+            color: white;
+        }
+
+        .ant-checkbox-inner {
+            border-color: #ed1941;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            background-color: #ed1941;
+        }
+
+        .termsOfUse {
+            padding-left: 3px;
+            text-decoration: underline;
+            color: #1890ff;
+        }
+
+    }
+}

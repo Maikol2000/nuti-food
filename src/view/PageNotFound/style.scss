@@ -1,0 +1,79 @@
+.bg-404 {
+  background-image: url("../../shared/assets//images/bg-err.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #012c0d;
+  position: relative;
+}
+
+.logo-err {
+  width: 32%;
+}
+
+.logo-404 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.content-err {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+
+  color: white;
+  font-weight: bold;
+  font-size: 5rem;
+  text-shadow: 0 0 1rem #15a51c;
+}
+
+.sub-content-err {
+  text-align: center;
+  padding: 3rem;
+}
+
+.btn-err {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-err {
+  position: absolute;
+  bottom: 0;
+  min-height: 25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-404 {
+    background-image: url("../../shared/assets//images/bg-err-desk.png");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #012c0d;
+  }
+
+  .content-err {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    color: white;
+    font-weight: bold;
+    font-size: 7rem;
+    text-shadow: 0 0 1rem #15a51c;
+  }
+}

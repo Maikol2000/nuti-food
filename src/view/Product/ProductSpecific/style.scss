@@ -1,0 +1,48 @@
+.product-specific {
+  background-image: url("../../../shared/assets/images/specific.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .product1 {
+    position: absolute;
+    top: 158px;
+    right: 308px;
+  }
+  .product2 {
+    position: absolute;
+    top: 158px;
+    right: 51px;
+  }
+  .product3 {
+    position: absolute;
+    top: 216px;
+    right: 177px;
+  }
+  .product4 {
+    position: absolute;
+    top: 274px;
+    right: 177px;
+  }
+  .product5 {
+    position: absolute;
+    top: 326px;
+    right: 308px;
+  }
+  .product6 {
+    position: absolute;
+    top: 326px;
+    right: 51px;
+  }
+  .product7 {
+    position: absolute;
+    top: 378px;
+    right: 177px;
+  }
+  .product8 {
+    position: absolute;
+    top: 429px;
+    right: 308px;
+  }
+}

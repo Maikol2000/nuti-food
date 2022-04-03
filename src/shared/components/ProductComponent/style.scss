@@ -1,0 +1,56 @@
+@import "../../../view/styles/variable";
+@import "../../../view/styles/mixin";
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+  &-content {
+    .product-title {
+      width: 152px;
+      @include style-text(bold, 1.6rem, 2.2rem, #fff);
+      font-family: Nunito;
+      font-style: normal;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+  }
+  &-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    &-1 {
+      position: absolute;
+      width: 19.7rem;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &-2 {
+      width: 16.7rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.8rem;
+    z-index: 10;
+  }
+  &-text {
+    @include style-text(normal, 1.2rem, 1.4rem, #fff);
+    font-family: Nunito;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+}

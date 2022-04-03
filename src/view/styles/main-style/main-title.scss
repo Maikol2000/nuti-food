@@ -1,0 +1,22 @@
+@use "variable";
+
+.secondary-title {
+  width: 200px;
+  height: 70px;
+  border: 8px solid transparent;
+  border-image-source: url("../../shared/assets//images/bg-title.png");
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  border-image-slice: 8 9 10 10 fill;
+  color: $color__secondary;
+  font-weight: bold;
+  text-shadow: 0px 0px 7px rgba(255, 153, 0, 0.71);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.inside-title {
+  width: 119px;
+  text-align: center;
+}

@@ -1,0 +1,89 @@
+@import "./variable";
+@import "./mixin";
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circe"),
+    url("../../shared/assets/font/Circe/CRC55.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe Extra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circe Extra Light"),
+    url("../../shared/assets/font/Circe/CRC25.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circe Light"),
+    url("../../shared/assets/font/Circe/CRC35.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Circe Bold"),
+    url("../../shared/assets/font/Circe/CRC65.woff") format("woff");
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: $color--main-text;
+  background-color: $color--background;
+  font-family: $main-font, -apple-system, sans-serif;
+  height: 100%;
+  height: -webkit-fill-available;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: $color--main-text;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.margin-select {
+  margin-right: 1vw;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.h-80 {
+  height: 80% !important;
+}
+
+.h-20 {
+  height: 20% !important;
+}
+
+.display-view__box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}

@@ -1,0 +1,70 @@
+@use "variable";
+
+.main-tabs {
+  .ant-tabs {
+    color: $color--main-text;
+    height: 100%;
+    .ant-tabs-nav {
+      &::before {
+        border-bottom: none !important;
+      }
+      .ant-tabs-nav-wrap {
+        background-color: $color-green;
+        height: 6.4rem;
+        @media screen and (min-width: 1024px) {
+          height: 9.2rem;
+        }
+        .ant-tabs-nav-list {
+          align-items: center;
+          margin: auto;
+          padding-right: 2rem;
+          .ant-tabs-tab {
+            min-width: 11.5rem;
+            height: 3.2rem;
+            margin-left: 2rem;
+            border-image: url("../../shared/assets/images/Button_mobile.png");
+            background-color: transparent;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border-image-slice: 0 0 0 0 fill;
+            @media screen and (min-width: 1024px) {
+              border-image: url("../../shared/assets/images/button_desktop.png");
+              -webkit-background-clip: padding-box;
+              background-clip: padding-box;
+              border-image-slice: 0 0 0 0 fill;
+              height: 6.1rem;
+              width: 21.7rem;
+            }
+            .ant-tabs-tab-btn {
+              width: 100%;
+              text-align: center;
+              font-size: 1.2rem;
+              color: $color--main-text;
+              opacity: 0.7;
+              padding: 0 2rem;
+              @media screen and(min-width:1024px) {
+                font-size: 2rem;
+              }
+            }
+          }
+          .ant-tabs-tab-active {
+            border-image: url("../../shared/assets/images/Button_mobile_green.png");
+            border-image-slice: 0 4 5.5 3 fill;
+            transition: all 0.2s linear;
+            @media screen and (min-width: 1024px) {
+              border-image: url("../../shared/assets/images/button_desktop_green.png");
+              border-image-slice: 0 4 5.5 3 fill;
+            }
+          }
+          .ant-tabs-ink-bar,
+          .ant-tabs-ink-bar-animated {
+            display: none;
+          }
+        }
+      }
+      .ant-tabs-nav-operations {
+        display: none;
+      }
+    }
+  }
+}

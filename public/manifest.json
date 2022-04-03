@@ -1,0 +1,84 @@
+{
+  "short_name": "Pepsi Music",
+  "name": "Pepsi không calo sảng khoá tột đỉnh bung cùng RAP Việt",
+  "description" : "Pepsi không calo sảng khoá tột đỉnh bung cùng RAP Việt",
+  "icons": [
+    {
+      "src": "/public/favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/public/logo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/public/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/public/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/public/logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/public/logo384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/public/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Thu âm",
+      "short_name": "Thu âm",
+      "description": "Thu âm bài hát nổi bật",
+      "url": "/#/beat-high/1",
+      "icons": [
+        {
+          "src": "/public/mic.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Xếp hạng",
+      "short_name": "Xếp hạng",
+      "description": "Bảng xếp hạng bài hát",
+      "url": "/#/ratting",
+      "icons": [
+        {
+          "src": "/public/bar-chart.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Danh sách video",
+      "short_name": "Xem video",
+      "description": "Xem danh sách video",
+      "url": "/#/video-list",
+      "icons": [
+        {
+          "src": "/public/video.png",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,20 @@
+export default {
+  "auth.login.mobilePhone.required": "Vui lòng nhập số điện thoại",
+  "auth.login.mobilePhone.inValid": "Số điện thoại không hợp lệ",
+  "auth.login.mobilePhone.placeholder": "Nhập số điện thoại",
+  "auth.register": "Đăng ký",
+  "auth.login": "Đăng nhập",
+  "auth.otp.title": "Nhập OTP",
+  "auth.otp.message.input": "Nhập OTP vừa được gửi về máy bạn",
+  "auth.otp.notification": "Mã OTP hết hiệu lực",
+  "auth.otp.resend.notification": "Bạn chưa nhận được mã?",
+  "auth.otp.resend": "Gửi lại mã ?",
+  "auth.title.main": "Chào mừng bạn đén với Nutifood Ngôi nhà dinh dưỡng",
+  "auth.username.placeholder": "Nhập họ và tên",
+  "auth.username.required": "Vui lòng nhập vào họ và tên!",
+  "auth.otp.not.enough": "Vui lòng nhập OTP đủ 4 kí tự",
+  "auth.login.success": "Đăng nhập thành công",
+  "auth.register.success": "Đăng kí thành công",
+  "auth.termsOfUse.required": "Vui lòng đồng ý với điều khoản",
+  
+};

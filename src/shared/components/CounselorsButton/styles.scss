@@ -1,0 +1,24 @@
+@import "./../../../view/styles/variable";
+@import "./../../../view/styles/mixin";
+
+.bgPlay {
+    position       : absolute;
+    width          : 6.2rem;
+    display        : flex;
+    justify-content: space-around;
+    bottom         : 5rem;
+    right          : 0px;
+    padding        : 5rem;
+
+    .bg {
+        width   : 100%;
+        position: absolute;
+    }
+
+    .avt {
+        top          : 7rem;
+        width        : 60%;
+        position     : absolute;
+        border-radius: 50%;
+    }
+}
